@@ -1,0 +1,643 @@
+/* Header Styling */
+
+html {
+  overflow-x: hidden;
+}
+
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 5;
+}
+
+@media (max-width: 420px) {
+  #mlh-trust-badge {
+    right: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  #mlh-trust-badge {
+    right: 10px;
+    width: 7%;
+  }
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
+  background-size: cover;
+  position: fixed;
+  z-index: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.shader {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #03A9F4;
+  background: -webkit-linear-gradient(left top, #03A9F4, #673AB7);
+  background: -o-linear-gradient(bottom right, #03A9F4, #673AB7);
+  background: -moz-linear-gradient(bottom right, #03A9F4, #673AB7);
+  background: linear-gradient(to bottom right, #03A9F4, #673AB7);
+  opacity: 0.8;
+}
+
+#center {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+  margin-left: -275px;
+  margin-top: -250px;
+  z-index: 3;
+}
+
+#center img {
+  width: 80%;
+  height: auto;
+}
+
+#center h2 {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 200%;
+  opacity: .7;
+  margin-top: 10px;
+}
+
+#center .signup {
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px 35px 15px 35px;
+  border: solid white 3px;
+  color: white;
+  margin-top: 25px;
+  font-size: 130%;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+#center .signup:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 570px) {
+  #center {
+    width: 360px;
+    margin-left: -180px;
+    height: 450px;
+    margin-top: -225px;
+  }
+}
+
+@media (max-width: 370px) {
+  #center {
+    width: 300px;
+    margin-left: -150px;
+    height: 390px;
+    margin-top: -195px;
+  }
+
+  #center h2 {
+    font-size: 160%;
+  }
+}
+
+#body-div {
+  position: absolute;
+  margin: 0;
+  margin-top: 100vh;
+  padding: 0;
+  width: 100%;
+}
+
+/* About Section Styling */
+
+#about {
+  margin: 0;
+  padding: 50px 20px 50px 20px;
+  background-color: white;
+  background-image: url("http://chicagohacks.tech/2017/img/skyline.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 1050px;
+  text-align: center;
+}
+
+#about h2 {
+  color: #262626;
+  font-size: 280%;
+  margin-top: 0;
+}
+
+#about h3 {
+  font-size: 140%;
+  color: #262626;
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+
+#about h3 a {
+  text-decoration: underline;
+  color: #262626;
+}
+
+#about p {
+  max-width: 1000px;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 200%;
+  font-size: 110%;
+}
+
+#about img {
+  width: 300px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  #about {
+  background-size: 600px;
+  }
+}
+
+@media (max-width: 410px) {
+  #about img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #about h2 {
+    font-size: 200%;
+  }
+}
+
+/* FAQ's Section Styling */
+
+#faq {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 50px 10px 50px 10px;
+  text-align: center;
+  border-top: solid #d0f0fe 35px;
+}
+
+#faq h2 {
+  color: #262626;
+  font-size: 250%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#faq .desc {
+  font-size: 110%;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.faq-grid {
+  text-align: center;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 150px;
+}
+
+.faq {
+  width: 330px;
+  max-width: 330px;
+  background-color: white;
+  border-left: solid #03A9F4 8px;
+  box-shadow: 0 1em 5em rgba(0, 0, 0, 0.10);
+  padding: 16px;
+  height: 270px;
+  margin: 20px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+@media (max-width: 1030px) and (min-width: 750px) {
+.faq-grid {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  max-width: 900px;
+  margin: auto;
+  }
+
+  .faq {
+    display: block;
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 1020px) {
+  .faq-grid {
+    margin-left: 90px;
+  }
+}
+
+.faq h4 {
+  color: #262626;
+  font-size: 150%;
+  margin: 0;
+  text-align: left;
+  line-height: 120%;
+}
+
+.faq p {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  text-align: left;
+  margin-top: 10px;
+  line-height: 170%;
+}
+
+#faq a {
+  color: #03A9F4;
+  text-decoration: none;
+}
+
+@media (max-width: 875px) {
+  .faq {
+    margin: 12px;
+    width: 300px;
+    height: 290px;
+  }
+}
+
+@media (max-width: 740px) {
+  .faq {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 15px 25px 15px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .faq {
+    margin: 15px;
+    margin-bottom: 0;
+  }
+
+  .faq h4 {
+    font-size: 120%;
+  }
+
+  .faq p {
+    font-size: 95%;
+  }
+}
+
+/* Schedule Section Styling */
+
+#schedule {
+  margin: 0;
+  padding: 50px 20px 50px 20px;
+  text-align: center;
+  background-color: #03A9F4;
+}
+
+#schedule h2 {
+  color: white;
+  font-size: 250%;
+  margin-top: 0;
+}
+
+.schedule-div {
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#schedule .day {
+  width: 350px;
+  display: inline-block;
+  margin: 30px;
+}
+
+#schedule .day h6 {
+  color: white;
+  font-size: 120%;
+  margin: 0;
+  text-align: left;
+  font-weight: normal;
+}
+
+#schedule .day .list-div {
+  text-align: left;
+}
+
+#schedule .list-item {
+  border-left: solid white 5px;
+  padding: 0;
+  padding-left: 4px;
+  margin: 15px 0 15px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.red-border {
+  border-left: solid #F44336 5px !important;
+}
+
+#schedule .list-item:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.day .time {
+  text-transform: uppercase;
+  color: #262626;
+  float: left;
+  font-size: 180%;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin: 7px 15px 0 5px;
+}
+
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: 0px;
+}
+
+.day .event {
+  float: left;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.extra {
+  color: white;
+  font-size: 105%;
+}
+
+@media (max-width: 480px) {
+  #schedule .day {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .day .time {
+    font-size: 150%;
+    margin: 8px 12px 0 4px;
+  }
+
+  .day .event {
+    font-size: 90%;
+    letter-spacing: -1px;
+  }
+}
+/* Sponsor Section Styling */
+
+#sponsors {
+  margin: 0;
+  padding: 50px 20px 10px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+#sponsors hr {
+  width: 40%;
+}
+
+#sponsors h2 {
+  color: #262626;
+  font-size: 250%;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#sponsors .sponsor-div {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#sponsors a {
+  box-sizing: border-box;
+}
+
+#sponsors .partner {
+  box-sizing: border-box;
+  display: block;
+  width: 350px;
+  height: auto;
+  margin: 25px;
+}
+
+#sponsors .sponsor-big {
+  box-sizing: border-box;
+  display: block;
+  width: 250px;
+  height: auto;
+  margin: 25px;
+}
+
+#sponsors .sponsor-small {
+  box-sizing: border-box;
+  display: block;
+  width: 170px;
+  height: auto;
+  margin: 25px;
+}
+
+@media (max-width: 500px) {
+  #sponsors {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #sponsors .partner {
+    max-width: 300px;
+  }
+
+  #sponsors .sponsor-small {
+    width: 160px;
+    margin: 10px;
+    display: block;
+  }
+
+  #big-div {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  #sponsors .sponsor-small {
+    width: 130px;
+    margin: 10px;
+    display: block;
+  }
+  #sponsors .partner {
+    max-width: 260px;
+  }
+}
+
+/* Prospectus Section Styling */
+
+#prospectus {
+  text-align: center;
+  padding: 35px 20px 35px 20px;
+  background-color: white;
+}
+
+#prospectus h3 {
+  color: #262626;
+  font-size: 180%;
+  margin-top: 0;
+}
+
+#prospectus button {
+  color: white;
+  background-color: #03A9F4;
+  border: none;
+  font-size: 120%;
+  cursor: pointer;
+  outline: none;
+  padding: 15px 25px 15px 25px;
+  border-radius: 8px;
+  border-bottom: solid #0275a8 5px;
+  transition: all .3s;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+#prospectus button:hover {
+  background-color: #2ebcfc;
+}
+
+#prospectus .closed {
+  background-color: #646464;
+  border-color: #474747;
+}
+
+#prospectus .closed:hover {
+  background-color: #787878;
+}
+
+/* Team Section Styling */
+
+#team {
+  padding: 50px 20px 15px 20px;
+  background-color: #03A9F4;
+  text-align: center;
+  text-decoration: none;
+}
+
+#team a {
+  text-decoration: none;
+}
+
+#team h3 {
+  color: white;
+  font-size: 250%;
+  margin-top: 0px;
+}
+
+#team .team-div {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.team-div .person {
+  display: inline-block;
+  width: 240px;
+  margin: 10px 20px 10px 20px;
+}
+
+.team-div img {
+  height: 170px;
+  width: 170px;
+  border-radius: 95px;
+  border: solid #0398db 10px;
+}
+
+.team-div h4 {
+  color: white;
+  font-size: 140%;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.team-div p {
+  text-decoration: none;
+  color: white;
+  opacity: .8;
+  font-size: 90%;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+/* Footer Section Styling */
+
+footer {
+  background-color: #0398db;
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+}
+
+footer .pdf {
+  color: white;
+  text-decoration: underline;
+  padding-bottom: -5px;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+  font-size: 90%;
+}
+
+footer img {
+  height: 32px;
+  width: 32px;
+  margin-top: 12px;
+}
