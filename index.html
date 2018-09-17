@@ -1,45 +1,114 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
-  	<meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <!-- <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
-    <link rel="manifest" href="img/icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#03A9F4">
-    <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#03A9F4"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet"> -->
-      <title>McDonogh Hacks</title>
+    <link rel="stylesheet" href="css/popup.css" />
+  	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/popup.js"></script>
+    <link rel="stylesheet" href="aos/aos.css" />
+
+
+    <title>McDonogh Hacks</title>
   </head>
 
-<body>
+  <body>
 
-
-  <header>
-    <div class="shader"></div>
-    <div id="center">
-      <h1><img src="logo.svg" alt="Chicago Hacks"></h1>
+    <header id="header">
+      <div class="center">
+        <img src="logo.svg" alt="McDonogh Hacks">
         <h2>The McDonogh School's First Open Hackathon</h2>
-          <!--<a class="typeform-share" href="https://b1yadavalli.typeform.com/to/lUGffL" data-mode="1" target="_blank"></a>-->
-          <button class="signup">Register Here</button>
+          <h5>Learn. Build. Innovate.</h5>
+      </div>
+    </header>
+
+    <div class="shuffle-wrap">
+      <div id="shuffle" class="shuffle" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="ease-out-back">
+
+        <div class="encompass">
+          <p class="super">When</p>
+          <p class="sub">November 9th & 11th</p>
+        </div>
+
+        <div class="encompass">
+          <p class="super">Where</p>
+          <p class="sub">The McDonogh School</p>
+        </div>
+
+        <a class="typeform-share" href="http://app.mcdonoghhacks.org/login" data-mode="1" target="_blank"><button>Sign Up</button></a>
+      </div>
     </div>
-  </header>
+
+    <div id="about">
+      <hr>
+      <h3>What is McDonogh Hacks?</h3>
+      <p class="desc">McDonogh Hacks is a 24 hour coding event spanning over 2 days where students will converge at McDonogh School to create amazing projects and learn about Computer Science. At the event, we will be having beginner to advance workshops and teams can compete against each other to win prizes that are judged by industry professionals.</p>
+    </div>
+
+    <div class="definition-wrap">
+    <div id="definition" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-out-back">
+      <p class="small">Noun</p>
+      <h3>hack&#8226;a&#8226;thon</h3>
+      <p class="pro">hak&#x259;-TH&#228;n</p>
+      <p class="def">an event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming.</p>
+    </div>
+    </div>
+
+    <div id="faq">
+      <hr>
+      <h3>FAQ's</h3>
+      <p class="faq-desc">See some of the most asked questions about our event</p>
+
+      <div class="faq-grid-wrap">
+        <div class="faq-grid">
+
+          <div class="faq-item" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="0">
+            <h6>Who can participate?</h6>
+            <p>Anyone and everyone is encouraged to apply!</p>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="0">
+            <h6>How much does it cost?</h6>
+            <p>Nothing! Everything is free of charge including food and t-shirts.</p>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="0">
+            <h6>What should I bring?</h6>
+            <p>A laptop, charger, and any other amenities you need. The event is overnight so you will need sleeping items.</p>
+          </div>
+          <!-- Get Laptops -->
+
+          <div class="faq-item" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="0">
+            <h6>Will there be prizes?</h6>
+            <p>Yes! Stay tuned for the prize distribution and categories.</p>
+          </div>
+
+          <div class="faq-item" id="target" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="0">
+            <h6>What can I create?</h6>
+            <p>Anything as long as it is school appropriate. You have full liberty to make games, apps, or websites. We encourage you to create projects that have positive impact. If you are struggling to think of ideas, visit <a href="http://chicagohacks.org" target="_blank">chicagohacks.org</a> to see winning projects and to explore another great hackathon.</p>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="0">
+            <h6>What type of workshops will be there?</h6>
+            <p>We will have workshops ranging from building your first website to machine learning. All workshops will be on Friday and Saturday.</p>
+          </div>
+
+        </div>
+      </div>
+      <p class="faq-contact">Still have other questions or concerns? Contact us at mingjie@mcdonoghhacks.org.</p>
+    </div>
 
 
-</body>
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+      window.addEventListener('load', AOS.refresh);
+    </script>
+
+  </body>
 </html>
