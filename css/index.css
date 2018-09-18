@@ -38,7 +38,9 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to top, var(--mcdonogh-orange) 0%, rgba(247, 174, 0, 0.75) 100%);
+  background: linear-gradient(-45deg, rgba(232, 115, 36, .7), rgba(247, 174, 0, .7)), url(/img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   text-align: center;
   padding: 50px 0 100px 0;
@@ -47,15 +49,26 @@ header {
 .center {}
 
 .center img {
-  height: 250px;
+  height: 95px;
   width: auto;
+}
+
+.center h1 {
+  margin: 10px 0 0 0;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .center h2 {
   margin: 10px 0 0 0;
   font-weight: 700;
   letter-spacing: 3px;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   text-transform: uppercase;
   padding-left: 20px;
