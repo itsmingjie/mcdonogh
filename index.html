@@ -3,10 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+  
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/popup.css" />
   <meta name="description" content="McDonogh Hacks is an open hackathon that looks to educate newer students on computer science while also helping the more advanced programmers excel." />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/masonry.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/smoothscroll.js"></script>
   <script src="js/popup.js"></script>
@@ -83,7 +85,7 @@
     <p class="faq-desc">See some of the most asked questions about our event</p>
 
     <div class="faq-grid-wrap">
-      <div class="faq-grid">
+      <div class="faq-grid" data-masonry='{ "itemSelector": ".faq-item"}'>
 
         <div class="faq-item" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="0">
           <h6>Who can participate?</h6>
