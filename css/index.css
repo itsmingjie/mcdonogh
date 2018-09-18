@@ -43,7 +43,9 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to top, #e87324 0%, rgba(247, 174, 0, 0.75) 100%);
+  background: linear-gradient(-72deg, rgba(232, 115, 36, .5), rgba(247, 174, 0, .8)), url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   text-align: center;
   padding: 50px 0 100px 0;
