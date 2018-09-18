@@ -1,5 +1,22 @@
 html {
-font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, sans-serif;
+  font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, sans-serif;
+}
+
+/* Root Colors */
+
+:root {
+  --mcdonogh-orange: #e87324;
+  --mcdonogh-green: #287114;
+  --mcdonogh-purple: #4f0131;
+  --mcdonogh-gold: #f7ae00;
+}
+
+a {
+  color: var(--mcdonogh-orange);
+}
+
+.material-icons {
+  vertical-align: bottom;
 }
 
 .clearfix:after {
@@ -10,8 +27,8 @@ font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, sans-serif;
 }
 
 img {
-    max-width: 90%;
-    height: auto;
+  max-width: 90%;
+  height: auto;
 }
 
 body {
@@ -21,15 +38,13 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to top, #e87324 0%, rgba(247, 174, 0, 0.75) 100%);
+  background-image: linear-gradient(to top, var(--mcdonogh-orange) 0%, rgba(247, 174, 0, 0.75) 100%);
   width: 100%;
   text-align: center;
   padding: 50px 0 100px 0;
 }
 
-.center {
-
-}
+.center {}
 
 .center img {
   height: 250px;
@@ -68,7 +83,7 @@ header {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
   margin-top: -52px;
   border-radius: 7px;
 }
@@ -103,11 +118,11 @@ header {
 .shuffle button {
   font-weight: 500;
   display: inline-block;
-  color: #e87324;
+  color: var(--mcdonogh-orange);
   cursor: pointer;
   font-size: 1em;
   background-color: transparent;
-  border: solid #e87324 2px;
+  border: solid var(--mcdonogh-orange) 2px;
   padding: 11px 28px 11px 28px;
   transition: all .3s;
   border-radius: 5px;
@@ -116,7 +131,7 @@ header {
 
 .shuffle button:hover {
   color: white;
-  background-color: #e87324;
+  background-color: var(--mcdonogh-orange);
 }
 
 @media (max-width: 625px) {
@@ -136,7 +151,6 @@ header {
     padding-top: 25px;
     width: 100%;
   }
-
   .shuffle .encompass {
     display: block;
     margin-left: auto;
@@ -144,15 +158,12 @@ header {
     width: 200px;
     margin-bottom: 20px;
   }
-
   .super {
     font-size: 1em;
   }
-
   .sub {
     font-size: 1.2em;
   }
-
   .shuffle button {
     font-size: 1.2em;
     margin-top: 5px;
@@ -183,7 +194,7 @@ header {
 #about hr {
   margin: 0;
   border: none;
-  border-top: solid #e87324 3px;
+  border-top: solid var(--mcdonogh-orange) 3px;
   width: 100px;
 }
 
@@ -204,7 +215,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   max-width: 650px;
-  box-shadow: 0 5px 18px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.3);
   padding: 25px;
   border-radius: 8px;
   margin-bottom: 60px;
@@ -216,7 +227,7 @@ header {
   position: relative;
   margin-top: -10px;
   margin-bottom: 70px;
-  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 #definition h3 {
@@ -234,7 +245,7 @@ header {
 
 #definition .small {
   margin: 0;
-  color: #e87324;
+  color: var(--mcdonogh-orange);
   margin-bottom: -3px;
   text-transform: uppercase;
   font-size: .95em;
@@ -245,7 +256,6 @@ header {
   margin: 0;
   color: rgba(0, 0, 0, 0.8);
 }
-
 
 /* Button */
 
@@ -276,8 +286,6 @@ header {
   color: rgba(0, 0, 0, 0.7);
 }
 
-
-
 #faq {
   max-width: 950px;
   margin: 60px auto 40px auto;
@@ -296,7 +304,7 @@ header {
 #faq hr {
   margin: 0;
   border: none;
-  border-top: solid #e87324 3px;
+  border-top: solid var(--mcdonogh-orange) 3px;
   width: 100px;
   margin-left: 35px;
 }
@@ -328,8 +336,8 @@ header {
   padding-top: 1.5%;
   padding-bottom: 3%;
   background-color: white;
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.15);
-  border-top: solid #e87324 3px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.15);
+  border-top: solid var(--mcdonogh-orange) 3px;
   border-radius: 0 0 8px 8px;
 }
 
@@ -365,7 +373,7 @@ header {
     padding: 5%;
     padding-top: 4.5%;
     padding-bottom: 5.5%;
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.15);
   }
   .faq-grid-wrap {
     padding: 0 35px 0 35px;
