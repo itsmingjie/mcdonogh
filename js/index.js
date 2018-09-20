@@ -62,4 +62,29 @@ $(document).ready(function () {
     $('#day1').addClass('hiddentable');
     $('#day1').removeClass('showntable');
   });
+
+  $("#submitEmail").click(() => {
+    $("#emailError").hide();
+    var email = $("input#email").val();
+
+    if (email == "") {
+      return;
+    } else if (validateEmail(email)) {
+      $.ajax({
+        type: "POST",
+        url: "https://script.google.com/macros/s/AKfycbzQwVyKVlBKYjSi3ItzoTfGagb6Fmgh02eps4aeplXVH1uah4c7/exec",
+        data: "email=" + email,
+        success: function () {
+          $("#emailForm").html("<h2 class=\"super\">Thanks! You're on the list. We'll let you know as soon as we're ready!</h2>");
+        }
+      });
+    } else {
+      $("#emailError").show();
+    }
+  });
 });
+
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
